@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myfont;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    font-family: myfont;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.card{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: auto auto;
+}
+.result{
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    color: rgba(212, 212, 212, 0.929);
+    padding-bottom: 30px;
+    width: 280px;
+}
+.show-result{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    padding: 7px;
+}
+.result p{
+    padding: 15px 50px;
+}
+#show-result{
+    color: white;
+    font-size: 45px;
+}
+.grade{
+    font-size: 24px;
+    padding-top: 25px;
+    font-weight: 500;
+    color: white;
+}
+.ex{
+    font-size: small;
+}
+
+
+
+.black-text {
+    color: #222;
+    font-weight: 500;
+}
+.grey {
+    color: rgba(87, 87, 87, 0.992);
+}
+.process{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-flow: column;
+    padding: 0 20px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.reaction{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: hsl(0, 100%, 67%);
+    background: hsl(0, 100%, 67%, 0.1);
+    border-radius: 7px;
+}
+.memory{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: hsl(39, 100%, 56%);
+    background: hsla(39, 100%, 56%, 0.1);
+    border-radius: 7px;
+}
+.verbal{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: hsl(166, 100%, 37%);
+    background: hsl(166, 100%, 37%, 0.1);
+    border-radius: 7px;
+}
+.visual{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: hsl(234, 85%, 45%);
+    background: hsl(234, 85%, 45%, 0.1);
+    border-radius: 7px;
+}
+.ed{
+    display: inline-flex;
+}
+.ed img{
+    margin-right: 5px;
+}
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border-radius: 20px;
+    font-size: small;
+}
+button:active{
+    transform: scale(0.98);
+}
+@media only screen and (max-width: 500px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
